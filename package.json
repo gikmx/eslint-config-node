@@ -1,0 +1,24 @@
+{
+    "name": "@gik/eslint",
+    "version": "0.0.1",
+    "description": "GIK's approach to EcmaScript",
+    "license": "MIT",
+    "homepage": "https://github.com/gikmx/eslint",
+    "collaborators": [
+        "Héctor Menéndez <hector@gik.mx> (https://hectormenendez.com)"
+    ],
+    "keywords": [
+        "style guide",
+        "lint",
+        "eslint",
+        "es2017",
+        "babel-eslint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gikmx/eslint.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gikmx/eslint/issues"
+    }
+}
