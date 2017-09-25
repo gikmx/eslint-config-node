@@ -12,16 +12,16 @@ You can also install each package separatedly.
 
 ### Installation
 
-You can either ins
+You can install all packages at once, or each one individually
 
 ```bash
-# All packages
+# Either install All packages
 npm i -D @gik/eslint-config
-# gik-base
+# … or gik-base
 npm i -D eslint-config-gik-base
-# gik-back
+# … or gik-back
 npm i -D eslint-config-gik-back
-# gik-front
+# … or gik-front
 npm i -D eslint-config-gik-front
 ```
 
