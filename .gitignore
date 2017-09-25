@@ -1,4 +1,6 @@
 node_modules
+.git
+.tern-port
 
 # Only apps should have lock-files
 yarn.lock
