@@ -1,5 +1,5 @@
 {
-    "name": "@gik/eslint-config-gik-node",
+    "name": "@gik/eslint-config-node",
     "version": "0.0.1",
     "description": "GIK's approach to write Node.js EcmaScript",
     "license": "MIT",
@@ -25,17 +25,13 @@
     "scripts": {
         "editorconfig": "editorconfig-tools check rules/*",
         "prelint": "npm run -s editorconfig",
-        "lint": "eslint rules/*",
-        "prepublishOnly": "npm run -s lint && safe-publish-latest"
+        "lint": "eslint rules/*"
     },
     "dependencies": {
-        "@gik/eslint-config-gik": "^0.0.1"
+        "@gik/eslint-config": "0.0.2"
     },
     "devDependencies": {
-        "babel-eslint": "^8.0.0",
         "editorconfig-tools": "^0.1.1",
-        "eslint": "^4.7.2",
-        "eslint-plugin-import": "^2.7.0",
-        "safe-publish-latest": "^1.1.1"
+        "eslint": "^4.7.2"
     }
 }

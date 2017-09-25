@@ -1,7 +1,7 @@
 module.exports = {
 
     // Use base settings
-    extends: '../../eslint-config-gik/rules/index.js',
+    extends: '@gik',
 
     // Disable browser rules
     env: {
