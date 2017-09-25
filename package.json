@@ -4,7 +4,7 @@
     "description": "GIK's approach to EcmaScript",
     "license": "MIT",
     "homepage": "https://github.com/gikmx/eslint",
-    "collaborators": [
+    "contributors": [
         "Héctor Menéndez <hector@gik.mx> (https://hectormenendez.com)"
     ],
     "keywords": [
