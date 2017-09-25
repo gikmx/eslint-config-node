@@ -4,32 +4,47 @@ GIK's approach to EcmaScript
 ### Packages included
 If you install this package, it will automatically include:
 
-- `gik-base`: The common rules for both frontend and backend development.
-- `gik-back`: Rules for backend development.
-- `gik-front`: Rules for frontend development. (SPA)
+- `gik`: The common rules for both frontend and backend development.
+- `gik-node`: Rules for backend development.
+- `gik-cycle`: Rules for frontend development using CycleJS.
 
-You can also install each package separatedly.
 
 ### Installation
 
-You can install all packages at once, or each one individually
-
 ```bash
-# Either install All packages
 npm i -D @gik/eslint-config
-# … or gik-base
-npm i -D eslint-config-gik-base
-# … or gik-back
-npm i -D eslint-config-gik-back
-# … or gik-front
-npm i -D eslint-config-gik-front
 ```
 
-After installing either package, pleaske make sure to have installed these
-peer-dependencies on your project.
+After installing, make sure to have installed these peer-dependencies on your project.
 *Look for the correct version on the installation output*
 
 ``` bash
 npm i -D eslint babel-eslint eslint-plugin-import
 ```
 
+### Usage
+
+In the corresponding `.eslintrc` file (or equivalent) add the `extends` property pointing
+to the preset name you wish to use.
+
+
+For general use:
+``` json
+{
+  "extends": "gik"
+}
+```
+
+For cycle.js apps:
+``` json
+{
+  "extends": "gik-cycle"
+}
+```
+
+For node:
+``` json
+{
+  "extends": "gik-node"
+}
+```
