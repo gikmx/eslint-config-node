@@ -1,6 +1,6 @@
 {
     "name": "@gik/eslint-config-node",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "GIK's approach to write Node.js EcmaScript",
     "license": "MIT",
     "homepage": "https://github.com/gikmx/eslint",
@@ -11,7 +11,7 @@
         "style guide",
         "lint",
         "eslint",
-        "es2017",
+        "es2018",
         "babel-eslint"
     ],
     "repository": {
@@ -28,7 +28,7 @@
         "lint": "eslint rules/*"
     },
     "dependencies": {
-        "@gik/eslint-config": "0.0.6"
+        "@gik/eslint-config": "0.0.7"
     },
     "devDependencies": {
         "editorconfig-tools": "^0.1.1",
