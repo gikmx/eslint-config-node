@@ -1,6 +1,6 @@
 {
     "name": "@gik/eslint-config-node",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "GIK's approach to write Node.js EcmaScript",
     "license": "MIT",
     "homepage": "https://github.com/gikmx/eslint",
