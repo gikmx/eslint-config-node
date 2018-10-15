@@ -1,7 +1,15 @@
+const extensions = [
+    '.js',
+    '.json',
+    '.mjs',
+];
+
 module.exports = {
 
     // Use base settings
-    extends: '@gik',
+    extends: [
+        '@gik',
+    ],
 
     // Disable browser rules
     env: {
@@ -14,8 +22,10 @@ module.exports = {
     },
 
     settings: {
+        'import/extensions': extensions,
         'import/resolver': {
             'babel-plugin-root-import': {
+                extensions, // added this capbility in own fork, needed for jsx resolves
                 rootPathPrefix: '~',
                 rootPathSuffix: 'src',
             },
