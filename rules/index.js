@@ -1,3 +1,5 @@
+const PATH = require('path');
+
 const extensions = [
     '.js',
     '.json',
@@ -6,6 +8,8 @@ const extensions = [
 
 module.exports = {
 
+    root: true,
+
     // Use base settings
     extends: [
         '@gik',
@@ -13,21 +17,26 @@ module.exports = {
 
     // Disable browser rules
     env: {
-        browser: false,
         node: true,
+        es6: true,
+        commonjs: false,
+        browser: false,
     },
 
+    parser: 'babel-eslint',
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 9, // 2018 will be deprecated soon, use 9 instead.
+        sourceType: 'module',
     },
 
     settings: {
         'import/extensions': extensions,
         'import/resolver': {
-            'babel-plugin-root-import': {
-                extensions, // added this capbility in own fork, needed for jsx resolves
-                rootPathPrefix: '~',
-                rootPathSuffix: 'src',
+            alias: {
+                map: [
+                    ['~', PATH.resolve(process.cwd(), 'src')],
+                ],
+                extensions,
             },
         },
     },

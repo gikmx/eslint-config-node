@@ -1,6 +1,6 @@
 {
     "name": "@gik/eslint-config-node",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "GIK's approach to write Node.js EcmaScript",
     "license": "MIT",
     "homepage": "https://github.com/gikmx/eslint",
@@ -32,7 +32,8 @@
     },
     "dependencies": {
         "@gik/eslint-config": "0.0.9",
-        "eslint-import-resolver-babel-plugin-root-import": "github:hectormenendez/eslint-import-resolver-babel-plugin-root-import"
+        "eslint-import-resolver-alias": "^1.1.1",
+        "eslint-plugin-import": "^2.14.0"
     },
     "devDependencies": {
         "editorconfig-tools": "^0.1.1",
